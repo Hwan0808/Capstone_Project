@@ -21,6 +21,8 @@ GPS를 이용한 실시간 버스정보알리미
 
 ## To Do List
 
+![KakaoTalk_20220310_165824368](https://user-images.githubusercontent.com/57865037/157790191-8946f752-a95b-48e8-8486-04c2c4bab091.jpg)
+
 1. H/W part
 
 - 아두이노 회로도 설계 - 와이파이 모듈(E12) - L2C OLED 디스플레이 출력
