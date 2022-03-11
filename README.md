@@ -46,6 +46,6 @@ GPS를 이용한 실시간 버스정보알리미
 
 - https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15080666
 - https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15080346
+- https://bota.tistory.com/1469
 - 모두의 아두이노 DIY – 김홍덕(길벗)
 - 스케치로 시작하는 아두이노 프로그래밍 (2판) - 제이펍
-- https://bota.tistory.com/1469
