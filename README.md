@@ -1,4 +1,4 @@
-# Capstone_Project ⚙
+# Capstone_Project
 
 종합설계 프로젝트 팀프로젝트 <br>
 
@@ -21,9 +21,6 @@ GPS를 이용한 실시간 버스정보알리미
 
 ## To Do List
 
-![KakaoTalk_20220310_165824368](https://user-images.githubusercontent.com/57865037/157790191-8946f752-a95b-48e8-8486-04c2c4bab091.jpg)
-![캡처](https://user-images.githubusercontent.com/57865037/157790397-934e790c-1c87-4be3-bdbd-c28c4cde4eab.PNG)
-
 1. H/W part
 
 - 아두이노 회로도 설계 - 와이파이 모듈(E12) - L2C OLED 디스플레이 출력
@@ -44,8 +41,8 @@ GPS를 이용한 실시간 버스정보알리미
 
 ## 참고 자료
 
-- https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15080666
-- https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15080346
-- https://bota.tistory.com/1469
+- https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15080666 경기도 공공 데이터 포털 사이트 버스 정보 (API)
+- https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15080346 경기도 공공 데이터 포털 사이트 버스 도착 정보 (API)
 - 모두의 아두이노 DIY – 김홍덕(길벗)
 - 스케치로 시작하는 아두이노 프로그래밍 (2판) - 제이펍
+- https://bota.tistory.com/1469 실시간 버스도착정보 LCD 화면에 출력하는 방법
