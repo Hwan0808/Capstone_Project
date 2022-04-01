@@ -17,7 +17,11 @@ GPS를 이용한 실시간 버스정보알리미
 
 ## Bug Fix
 
-- 각종 수정 사항 업로드
+![image](https://user-images.githubusercontent.com/57865037/161235404-4a173910-ce40-4421-aa1b-06a6459a07dc.png)
+
+![image](https://user-images.githubusercontent.com/57865037/161235380-f4833446-9f39-4ef8-a30b-825f3ba0cbb1.png)
+
+![image](https://user-images.githubusercontent.com/57865037/161235223-a093dce8-329d-48a0-b65a-85eba0b60121.jpg)
 
 ## To Do List
 
@@ -45,4 +49,5 @@ GPS를 이용한 실시간 버스정보알리미
 - https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15080346 경기도 공공 데이터 포털 사이트 버스 도착 정보 (API)
 - 모두의 아두이노 DIY – 김홍덕(길벗)
 - 스케치로 시작하는 아두이노 프로그래밍 (2판) - 제이펍
+- https://www.weather.go.kr/w/index.do - 기상청 날씨 누리
 - https://bota.tistory.com/1469 실시간 버스도착정보 LCD 화면에 출력하는 방법
