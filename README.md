@@ -51,3 +51,4 @@ GPS를 이용한 실시간 버스정보알리미
 - https://bota.tistory.com/1469 실시간 버스도착정보 LCD 화면에 출력하는 방법
 - https://blog.naver.com/geniusus/221799048747 PushBullet 사용법
 - https://blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=twophase&logNo=220730309094 PushBullet 사용법
+- https://www.youtube.com/channel/UCV68qKnBcZ-LR5hWnzCRf_A/search?query=%EC%9B%B9 웹서버 구축 두원공과대학교_김동일 교수님
