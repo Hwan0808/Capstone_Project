@@ -1,10 +1,10 @@
  #define serviceKey String ("A44txAbG4xvtwlhJfgd7SIHSndYpwkzy65BpHPG75%2Fdzqhqr%2FSlAjzYldYmYwhwLUPjsxB9PWh37iT10AwRCrg%3D%3D")
  
 //API Key
- 
+
 char* ssid = "KT_GiGA_AAE1";
 char* password = "edcd6eg366";
- 
+
 const int GBISUPD_INTERVAL = 12000;
 const int WEATHER_INTERVAL = 20000;
 const char* host_1 = "apis.data.go.kr";
@@ -34,8 +34,10 @@ String result_95;
 String result_56;
 String result_60;
 String Weather;
+//String temp;
+//String wfEn;
+//String reh;
 
- 
 void setup() {
   Serial.begin(115200);
   setup_oled();
@@ -145,7 +147,7 @@ String parseArrivalTime(String busNum)
   int startIndex = rcvbuf.indexOf("<predictTime1>");
   if(startIndex == -1){ 
     rcvbuf = "";
-    return busNum + " : No buses in service";
+    return busNum + " : End of Service ";
   }
  
   int strLength = strlen("<predictTime1>");
@@ -182,7 +184,7 @@ String parseArrivalTime(String busNum)
 
 void requestWeatherApi() {
 
-  String str = "GET /wid/queryDFSRSS.jsp?zone=4119060300";
+  String str = "GET /wid/queryDFSRSS.jsp?zone=4119060300"; // 부천지역의 날씨 정보
   str.concat(" HTTP/1.1\r\nHost:www.kma.go.kr\r\nConnection: close\r\n\r\n");  
 
   if(client.connect(host_2, httpPort)){
@@ -217,7 +219,7 @@ String parseWeatherApi(String Weather) {
 
   while(client.available()){
     
-  //라인을 기준으로 문자열을 저장한다.
+    //라인을 기준으로 문자열을 저장한다.
     String line = client.readStringUntil('\n');
 
       i= line.indexOf("</temp>");
@@ -249,6 +251,6 @@ String parseWeatherApi(String Weather) {
 
   delay(1000);
 
-  return Weather + " : " + wfEn + ", " + temp + "C°";
+  return Weather + " : " + wfEn + ", " + temp + "C";
 
 }

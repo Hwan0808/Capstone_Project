@@ -3,7 +3,6 @@
 #include "SPI.h"
 #include <SPI.h>
 #include <Wire.h>
-#include <Adafruit_GFX.h>
 #include <ArduinoJson.h>
 #include <Arduino.h>
 
@@ -42,7 +41,7 @@ void do_oled(int16_t x, int16_t y, String result) {
   display.drawString(22,13, result_95);
   display.drawString(22,26, result_56);
   display.drawString(22,39, result_60);
-  display.drawString(15,52, Weather);
+  display.drawString(10,52, Weather);
   display.display();
   Serial.println(result);
 }
