@@ -17,9 +17,7 @@ GPS를 이용한 실시간 버스정보알리미
 
 ## Bug Fix
 
-![image](https://user-images.githubusercontent.com/57865037/161235404-4a173910-ce40-4421-aa1b-06a6459a07dc.png)
-
-![image](https://user-images.githubusercontent.com/57865037/161235380-f4833446-9f39-4ef8-a30b-825f3ba0cbb1.png)
+![image](https://user-images.githubusercontent.com/57865037/162119464-6960a118-9d9f-44d1-a2de-dfe907ebc898.jpeg)
 
 ![image](https://user-images.githubusercontent.com/57865037/161235223-a093dce8-329d-48a0-b65a-85eba0b60121.jpg)
 
