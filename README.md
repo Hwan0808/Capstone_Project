@@ -1,4 +1,4 @@
-# Capstone_Project
+# Capstone_Project ⚙️
 
 종합설계 프로젝트 팀프로젝트 <br>
 
