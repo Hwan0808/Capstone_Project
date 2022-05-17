@@ -16,6 +16,10 @@ GPS를 이용한 실시간 버스정보알리미
 - 아두이노로부터 받아온 데이터를 파싱하는 작업을 구현하고 사용자에게 간략하게 보여줄 수 있는 웹페이지를 제작한다.
 - pushbullet 앱을 이용하여 푸시알림이 가도록 설계한다.
 
+## 회로 설계도
+
+![image](https://user-images.githubusercontent.com/57865037/168776372-ba141567-fdf4-45b4-9159-1ee9f365278c.png)
+
 ## Bug Fix
 
 ![image](https://user-images.githubusercontent.com/57865037/162119464-6960a118-9d9f-44d1-a2de-dfe907ebc898.jpeg)
