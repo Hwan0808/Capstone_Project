@@ -24,7 +24,7 @@ GPS를 이용한 실시간 버스정보알리미
 
 ![image](https://user-images.githubusercontent.com/57865037/169029916-244a31dc-addf-450a-9dfe-337bc44b4531.png)
 
-![image](https://user-images.githubusercontent.com/57865037/161235223-a093dce8-329d-48a0-b65a-85eba0b60121.jpg)
+![image](https://user-images.githubusercontent.com/57865037/169031485-3f2253d4-63d7-4efb-9574-488dbeb94451.png)
 
 ## To Do List
 
