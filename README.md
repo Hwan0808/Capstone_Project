@@ -22,9 +22,9 @@ GPS를 이용한 실시간 버스정보알리미
 
 ## Bug Fix
 
-![image](https://user-images.githubusercontent.com/57865037/169029916-244a31dc-addf-450a-9dfe-337bc44b4531.png)
+![image](https://user-images.githubusercontent.com/57865037/169040718-443fbb6a-bbd4-4694-9782-571cb5e3cb6e.png)
 
-![KakaoTalk_20220518_204535248](https://user-images.githubusercontent.com/57865037/169031741-55a71330-d568-4259-8e9e-fe0a5600274b.jpg)
+![image](https://user-images.githubusercontent.com/57865037/169031741-55a71330-d568-4259-8e9e-fe0a5600274b.jpg)
 
 ## To Do List
 
