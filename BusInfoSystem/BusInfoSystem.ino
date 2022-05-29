@@ -6,8 +6,8 @@
 #include "location.h"
 #include "image.h"
              
-char* ssid = "iPhone_cch"; // WIFI AP
-char* password = "project2022"; // PassWord
+char* ssid = "KT_GiGA_AAE1"; // WIFI AP
+char* password = "edcd6eg366"; // PassWord
 
 // Google API key
 String geolocationKey = "AIzaSyBqja_I-OFCSNvQq6BCWyayxl5-LgjkBJw";
@@ -57,6 +57,7 @@ float LONG_value;
 void setup() {
   Serial.begin(115200);
   setup_oled();
+  logo_oled();
   wifi_ready = connect_ap(ssid, password); // 와이파이 연결 하기
   if (!wifi_ready){
     nowifi_oled();

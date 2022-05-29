@@ -19,6 +19,13 @@ void setup_oled(){
   display.clearDisplay();
 }
 
+void logo_oled(){
+  display.clearDisplay();
+  display.drawBitmap(0,0,imgText,128,64,1);
+  display.display(); 
+  delay(3000);
+}
+
 void wifi_oled() 
 {
   for( int i = 0; i < IMAGE_COUNT; i++)
