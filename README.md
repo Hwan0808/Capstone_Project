@@ -18,7 +18,7 @@ GPS를 이용한 실시간 버스정보알리미
 
 ## 회로 설계도
 
-![image](https://user-images.githubusercontent.com/57865037/168776372-ba141567-fdf4-45b4-9159-1ee9f365278c.png)
+![image](https://user-images.githubusercontent.com/57865037/170855271-a71f9881-29ad-456f-9849-2df229aa9c56.png)
 ![image](https://user-images.githubusercontent.com/57865037/169697709-fb1d72a6-2c2a-4a5e-be2c-8a321cad8482.png)
 
 
