@@ -46,8 +46,9 @@ GPS를 이용한 실시간 버스정보알리미
 
 ※ NodeMCU 2.4.2 버전으로 설치해야 정상적으로 작동함. 
 
-1. location.zip 라이브러리 추가, Adafruit_GFX 라이브러리 설치, Adafruit_SSD1306 라이브러리 설치
-2. WIFI, PASSWORD 수정 후 업로드
+1. 파일 - 환경설정 - 설정 탭에 (추가적인 보드 URL http://arduino.esp8266.com/stable/package_esp8266com_index.json ) 추가
+2. location.zip 라이브러리 추가, Adafruit_GFX 라이브러리 설치, Adafruit_SSD1306 라이브러리 설치 이외에 헤더파일은 파일에 추가되어 있음.
+3. WIFI, PASSWORD 수정 후 업로드
 
 ## 참고 자료
 
