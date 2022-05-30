@@ -40,7 +40,7 @@ void handleRoot1() { // 루트에 접속할때 실행할 내용 (웹서버 동�
   
   webpage += "<div id=\"map\" style=\"width:50%; height:350px; margin: 0 auto;\"></div>";
   webpage += "<script type=\"text/javascript\"> function myMap() { ";
-  webpage += "var myCenter = new google.maps.LatLng(" + LAT + " , " + LONG + ");"; 
+  webpage += "var myCenter = new google.maps.LatLng(" + LAT_value + " , " + LONG_value + ");"; 
   webpage += "var mapCanvas = document.getElementById(\"map\");";
   webpage += "var mapOptions = {center: myCenter, zoom: 15};";
   webpage += "var map = new google.maps.Map(mapCanvas, mapOptions);"; 
@@ -96,7 +96,7 @@ void handleRoot2() { // 루트에 접속할때 실행할 내용 (웹서버 동�
   
   webpage += "<div id=\"map\" style=\"width:50%; height:350px; margin: 0 auto;\"></div>";
   webpage += "<script type=\"text/javascript\"> function myMap() { ";
-  webpage += "var myCenter = new google.maps.LatLng(" + LAT + " , " + LONG + ");"; 
+  webpage += "var myCenter = new google.maps.LatLng(" + LAT_value + " , " + LONG_value + ");"; 
   webpage += "var mapCanvas = document.getElementById(\"map\");";
   webpage += "var mapOptions = {center: myCenter, zoom: 15};";
   webpage += "var map = new google.maps.Map(mapCanvas, mapOptions);"; 
@@ -153,7 +153,7 @@ void handleRoot3() { // 루트에 접속할때 실행할 내용 (웹서버 동�
   
   webpage += "<div id=\"map\" style=\"width:50%; height:350px; margin: 0 auto;\"></div>";
   webpage += "<script type=\"text/javascript\"> function myMap() { ";
-  webpage += "var myCenter = new google.maps.LatLng(" + LAT + " , " + LONG + ");"; 
+  webpage += "var myCenter = new google.maps.LatLng(" + LAT_value + " , " + LONG_value + ");"; 
   webpage += "var mapCanvas = document.getElementById(\"map\");";
   webpage += "var mapOptions = {center: myCenter, zoom: 15};";
   webpage += "var map = new google.maps.Map(mapCanvas, mapOptions);"; 

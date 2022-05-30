@@ -48,11 +48,11 @@ String result_3300; String result_3301; String result_530;
 
 String Weather;
 
-String LAT = "";
-String LONG = "";
+String LAT_value; // 37.37
+String LONG_value; // 126.80
 
-float LAT_value;
-float LONG_value;
+float LAT = LAT_value.toFloat();
+float LONG = LONG_value.toFloat();
 
 void setup() {
   Serial.begin(115200);
@@ -66,16 +66,16 @@ void setup() {
   myLocation.begin(geolocationKey, geocodingKey, MCC, MNC, carrier);
   get_location();
 
-  LAT_value = LAT.toFloat(); // 37.37
-  LONG_value = LONG.toFloat(); // 126.80
-
-  if ((LAT_value >= 37.47 && LAT_value <= 37.49) && (LONG_value >= 126.79 && LONG_value <= 126.81)) { 
+  LAT = LAT_value.toFloat();
+  LONG = LONG_value.toFloat();
+  
+  if ((LAT >= 37.47 && LAT <= 37.49) && (LONG>= 126.79 && LONG <= 126.81)) { 
       server.on("/", handleRoot1); // 접속 되었을때 실행할 함수 (웹서버 동작시에 실행하는 함수)
   }
-  else if ((LAT_value >= 37.31 && LAT_value <= 37.33) && (LONG_value >= 126.93 && LONG_value <= 126.95)){
+  else if ((LAT >= 37.31 && LAT <= 37.33) && (LONG >= 126.93 && LONG <= 126.95)){
       server.on("/", handleRoot2); // 접속 되었을때 실행할 함수 (웹서버 동작시에 실행하는 함수)
   }
-  else if ((LAT_value >= 37.36 && LAT_value <= 37.38) && (LONG_value >= 126.79 && LONG_value <= 126.81)){
+  else if ((LAT >= 37.36 && LAT <= 37.38) && (LONG >= 126.79 && LONG <= 126.81)){
       server.on("/", handleRoot3); // 접속 되었을때 실행할 함수 (웹서버 동작시에 실행하는 함수)
   }  
   server.begin(); // 웹서버 시작
@@ -97,7 +97,7 @@ void loop(){
   
   server.handleClient();
 
-  if((LAT_value >= 37.47 && LAT_value <= 37.49) && (LONG_value >= 126.79 && LONG_value <= 126.81)) {
+  if((LAT >= 37.47 && LAT <= 37.49) && (LONG >= 126.79 && LONG <= 126.81)) {
   
     if(millis() - previousMillis > GBISUPD_INTERVAL){ // 소사역
       result_95 = parseArrivalTime("95");
@@ -141,12 +141,12 @@ void loop(){
     {
     
       // 날씨 정보 받아오기
-      requestWeatherApi();
+      requestWeatherApi("4119060300");
       Weather = parseWeatherApi("Weather");
       requestLocker3 = false;
       requestLocker2 = true;
     }
-} else if((LAT_value >= 37.31 && LAT_value <= 37.33) && (LONG_value >= 126.93 && LONG_value <= 126.95)) {
+} else if((LAT >= 37.31 && LAT <= 37.33) && (LONG >= 126.93 && LONG <= 126.95)) {
     
       if(millis() - previousMillis > GBISUPD_INTERVAL){ // 한국교통대학교 정류장
       result_1_2 = parseArrivalTime("1-2");
@@ -190,12 +190,12 @@ void loop(){
     {
     
       // 날씨 정보 받아오기
-      requestWeatherApi();
+      requestWeatherApi("4143052000");
       Weather = parseWeatherApi("Weather");
       requestLocker3 = false;
       requestLocker2 = true;
     }
-} else if((LAT_value >= 37.36 && LAT_value <= 37.38) && (LONG_value >= 126.79 && LONG_value <= 126.81)) {
+} else if((LAT >= 37.36 && LAT <= 37.38) && (LONG >= 126.79 && LONG <= 126.81)) {
     
       if(millis() - previousMillis > GBISUPD_INTERVAL){ // 시흥능곡역
       result_3300 = parseArrivalTime("3300");
@@ -239,7 +239,7 @@ void loop(){
     {
     
       // 날씨 정보 받아오기
-      requestWeatherApi();
+      requestWeatherApi("4139064000");
       Weather = parseWeatherApi("Weather");
       requestLocker3 = false;
       requestLocker2 = true;
@@ -319,9 +319,9 @@ String parseArrivalTime(String busNum)
   
 }
 
-void requestWeatherApi() {
+void requestWeatherApi(String dongId) {
 
-  String str = "GET /wid/queryDFSRSS.jsp?zone=4119060300"; // 부천지역의 날씨 정보
+  String str = "GET /wid/queryDFSRSS.jsp?zone=" + dongId; // 부천지역의 날씨 정보
   str.concat(" HTTP/1.1\r\nHost:www.kma.go.kr\r\nConnection: close\r\n\r\n");  
 
   if(client.connect(host_2, httpPort)){
@@ -388,8 +388,8 @@ void get_location() {
   
   myLocation.getLocation(); 
   
-  LAT = String(myLocation.latitude);
-  LONG = String(myLocation.longitude); 
+  LAT_value = String(myLocation.latitude,7);
+  LONG_value = String(myLocation.longitude,7); 
  
   Serial.println("-------------------------");
   Serial.print("Latitude = ");     Serial.println(myLocation.latitude);

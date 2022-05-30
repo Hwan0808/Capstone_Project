@@ -55,7 +55,7 @@ void nowifi_oled() {
   display.setCursor(42,15);
   display.println("WIFI");
   display.setCursor(10,35);
-  display.println("DISCONNECTED");
+  display.println("DISCONNECT");
   display.display();  
 }
 
