@@ -50,6 +50,7 @@ GPS를 이용한 실시간 버스정보알리미
 
 - https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15080666 경기도 공공 데이터 포털 사이트 버스 정보 (API)
 - https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15080346 경기도 공공 데이터 포털 사이트 버스 도착 정보 (API)
+- https://www.youtube.com/watch?v=O3TEW6eQNBc location 라이브러리 설치 경로
 - https://www.weather.go.kr/w/index.do 기상청 날씨 누리
 - https://bota.tistory.com/1469 실시간 버스도착정보 LCD 화면에 출력하는 방법
 - https://blog.naver.com/geniusus/221799048747 PushBullet 사용법
